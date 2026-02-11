@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <div className="pt-1">
               <p className="font-semibold">사전 결제</p>
-              <p className="text-sm text-gray-600 mt-1">(아래 옵션 중 선택)</p>
+              <p className="text-sm text-gray-600 mt-1">(맨 아래 결제 안내 참고)</p>
             </div>
           </div>
 
@@ -91,9 +91,111 @@ export default function Home() {
             촬영 전, 스태프에게 <span className="font-bold">[결제 완료 화면]</span>을 꼭 보여주세요.
           </p>
         </div>
+      </section>
+
+      {/* 구분선 */}
+      <div className="h-2 bg-black mx-6"></div>
+
+      {/* 프레임 선택 - 2x2 그리드 */}
+      <section className="px-6 py-12 bg-white">
+        <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
+        <p className="text-center text-gray-600 mb-8 text-sm">
+          촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
+        </p>
+        
+        <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+            <img 
+              src="/a.png" 
+              alt="프레임 1" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+            <img 
+              src="/a2.png" 
+              alt="프레임 2" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+            <img 
+              src="/a3.png" 
+              alt="프레임 3" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+            <img 
+              src="/a4.png" 
+              alt="프레임 4" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 구분선 */}
+      <div className="h-2 bg-black mx-6"></div>
+
+      {/* 추가 즐길거리 */}
+      <section className="px-6 py-12 bg-white">
+        <h2 className="text-2xl font-bold mb-3 text-center">
+          사진 말고도,<br />즐길 거리가 있어요
+        </h2>
+        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
+          기다리는 시간까지도 기억이 되도록 준비했어요.<br />
+          포토부스 외에도 곳곳에 숨겨진 재미를 찾아보세요!
+        </p>
+
+        <div className="space-y-6 max-w-md mx-auto">
+          <div className="p-5 border-2 border-black rounded-lg">
+            <h3 className="font-bold text-lg mb-2">우리들의 방명록</h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              각 주제에 대해 자유롭게 작성해주세요. 우리의 이야기가 모여 하나의 추억이 됩니다.
+            </p>
+          </div>
+
+          <div className="p-5 border-2 border-black rounded-lg">
+            <h3 className="font-bold text-lg mb-2">실시간 메세징 웹캠 포토존</h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              QR을 찍고 메시지를 보내면 5초 동안, 실시간으로 캠에 떠오릅니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 구분선 */}
+      <div className="h-2 bg-black mx-6"></div>
+
+      {/* 대기동선 안내 */}
+      <section className="px-6 py-12 bg-white">
+        <h2 className="text-2xl font-bold mb-3 text-center">대기동선 안내</h2>
+        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
+          원활한 진행을 위해 안내된 동선을<br />따라 줄을 서주시면 감사하겠습니다.
+        </p>
+        
+        <div className="max-w-md mx-auto">
+          <img 
+            src="/waitingline.jpg" 
+            alt="대기동선 안내" 
+            className="w-full rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      {/* 구분선 */}
+      <div className="h-2 bg-black mx-6"></div>
+
+      {/* 결제 안내 - 대기동선 아래로 이동 */}
+      <section className="px-6 py-12 bg-white">
+        <h2 className="text-2xl font-bold mb-3 text-center">결제 안내</h2>
+        <p className="text-center text-gray-600 mb-8 text-sm">
+          원하시는 옵션을 선택해주세요
+        </p>
 
         {/* 결제 옵션 카드 */}
-        <div className="mt-8 space-y-3 max-w-md mx-auto">
+        <div className="space-y-3 max-w-md mx-auto">
           <p className="text-center font-semibold text-gray-800 mb-4">💳 장수별 결제</p>
           
           <a 
@@ -161,97 +263,6 @@ export default function Home() {
               </div>
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
-
-{/* 프레임 선택 - 2x2 그리드 */}
-<section className="px-6 py-12 bg-white">
-  <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
-  <p className="text-center text-gray-600 mb-8 text-sm">
-    촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
-  </p>
-  
-  <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-      <img 
-        src="/a.png" 
-        alt="프레임 1" 
-        className="w-full h-full object-contain"
-      />
-    </div>
-    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-      <img 
-        src="/a2.png" 
-        alt="프레임 2" 
-        className="w-full h-full object-contain"
-      />
-    </div>
-    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-      <img 
-        src="/a3.png" 
-        alt="프레임 3" 
-        className="w-full h-full object-contain"
-      />
-    </div>
-    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-      <img 
-        src="/a4.png" 
-        alt="프레임 4" 
-        className="w-full h-full object-contain"
-      />
-    </div>
-  </div>
-</section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
-
-      {/* 추가 즐길거리 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">
-          사진 말고도,<br />즐길 거리가 있어요
-        </h2>
-        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
-          기다리는 시간까지도 기억이 되도록 준비했어요.<br />
-          포토부스 외에도 곳곳에 숨겨진 재미를 찾아보세요!
-        </p>
-
-        <div className="space-y-6 max-w-md mx-auto">
-          <div className="p-5 border-2 border-black rounded-lg">
-            <h3 className="font-bold text-lg mb-2">우리들의 방명록</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              각 주제에 대해 자유롭게 작성해주세요. 우리의 이야기가 모여 하나의 추억이 됩니다.
-            </p>
-          </div>
-
-          <div className="p-5 border-2 border-black rounded-lg">
-            <h3 className="font-bold text-lg mb-2">실시간 메세징 웹캠 포토존</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              QR을 찍고 메시지를 보내면 5초 동안, 실시간으로 캠에 떠오릅니다.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
-
-      {/* 대기동선 안내 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">대기동선 안내</h2>
-        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
-          원활한 진행을 위해 안내된 동선을<br />따라 줄을 서주시면 감사하겠습니다.
-        </p>
-        
-        <div className="max-w-md mx-auto">
-          <img 
-            src="/waitingline.jpg" 
-            alt="대기동선 안내" 
-            className="w-full rounded-lg shadow-lg"
-          />
         </div>
       </section>
 
