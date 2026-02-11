@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -53,7 +51,7 @@ export default function Home() {
             </div>
             <div className="pt-1">
               <p className="font-semibold">사전 결제</p>
-              <p className="text-sm text-gray-600 mt-1">(아래 링크 클릭)</p>
+              <p className="text-sm text-gray-600 mt-1">(아래 옵션 중 선택)</p>
             </div>
           </div>
 
@@ -94,56 +92,115 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 결제 버튼 */}
-        <div className="mt-6 max-w-md mx-auto">
+        {/* 결제 옵션 카드 */}
+        <div className="mt-8 space-y-3 max-w-md mx-auto">
+          <p className="text-center font-semibold text-gray-800 mb-4">💳 장수별 결제</p>
+          
           <a 
-            href="https://payapp.kr/L/z488q3"
+            href="https://ciderpay.com/l/Mmyl42"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full py-4 bg-black text-white text-center font-bold rounded-lg hover:bg-gray-800 transition-colors"
+            className="block p-4 bg-white border-2 border-gray-800 rounded-xl hover:bg-gray-50 transition-all"
           >
-            결제하러 가기
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-gray-800">2장</p>
+                <p className="text-sm text-gray-600 mt-1">포토 2컷</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-gray-800">3,000원</p>
+              </div>
+            </div>
           </a>
+
+          <a 
+            href="https://ciderpay.com/l/UADUfu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-4 bg-white border-2 border-gray-800 rounded-xl hover:bg-gray-50 transition-all"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-gray-800">4장</p>
+                <p className="text-sm text-gray-600 mt-1">포토 4컷</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-gray-800">5,000원</p>
+              </div>
+            </div>
+          </a>
+
+          <a 
+            href="https://ciderpay.com/l/qQYy6c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-4 bg-white border-2 border-gray-800 rounded-xl hover:bg-gray-50 transition-all"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-gray-800">6장</p>
+                <p className="text-sm text-gray-600 mt-1">포토 6컷</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-gray-800">7,000원</p>
+              </div>
+            </div>
+          </a>
+
+          <div className="pt-4">
+            <p className="text-center font-semibold text-gray-800 mb-3">또는</p>
+            <a 
+              href="https://qr.kakaopay.com/Ej7klol3J"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-4 bg-yellow-300 border-2 border-yellow-400 rounded-xl hover:bg-yellow-400 transition-all"
+            >
+              <div className="flex items-center justify-center gap-2">
+                <span className="text-xl">💰</span>
+                <p className="font-bold text-gray-800">카카오페이 바로송금</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
-      {/* 프레임 선택 */}
+      {/* 프레임 선택 - 1열 세로 배치로 변경 (이미지 잘림 방지) */}
       <section className="px-6 py-12 bg-white">
         <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
         <p className="text-center text-gray-600 mb-8 text-sm">
           촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
         </p>
         
-        <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3]">
+        <div className="space-y-5 max-w-md mx-auto">
+          <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
               src="/a.png" 
               alt="프레임 1" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3]">
+          <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
               src="/a2.png" 
               alt="프레임 2" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3]">
+          <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
               src="/a3.png" 
               alt="프레임 3" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3]">
+          <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
               src="/a4.png" 
               alt="프레임 4" 
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
         </div>
@@ -212,12 +269,12 @@ export default function Home() {
         <div className="mt-8">
           <p className="text-sm mb-3 opacity-80">📷 누비포토 인스타그램</p>
           <a 
-            href="https://www.instagram.com/nubi_photo"
+            href="https://www.instagram.com/nuvy.photo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            @nubi_photo
+            @nuvy.photo
           </a>
         </div>
       </section>
