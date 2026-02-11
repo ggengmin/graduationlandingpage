@@ -167,44 +167,44 @@ export default function Home() {
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
-      {/* 프레임 선택 - 1열 세로 배치로 변경 (이미지 잘림 방지) */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
-        <p className="text-center text-gray-600 mb-8 text-sm">
-          촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
-        </p>
-        
-        <div className="space-y-5 max-w-md mx-auto">
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <img 
-              src="/a.png" 
-              alt="프레임 1" 
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <img 
-              src="/a2.png" 
-              alt="프레임 2" 
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <img 
-              src="/a3.png" 
-              alt="프레임 3" 
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
-            <img 
-              src="/a4.png" 
-              alt="프레임 4" 
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-      </section>
+{/* 프레임 선택 - 2x2 그리드 */}
+<section className="px-6 py-12 bg-white">
+  <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
+  <p className="text-center text-gray-600 mb-8 text-sm">
+    촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
+  </p>
+  
+  <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+      <img 
+        src="/a.png" 
+        alt="프레임 1" 
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+      <img 
+        src="/a2.png" 
+        alt="프레임 2" 
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+      <img 
+        src="/a3.png" 
+        alt="프레임 3" 
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+      <img 
+        src="/a4.png" 
+        alt="프레임 4" 
+        className="w-full h-full object-contain"
+      />
+    </div>
+  </div>
+</section>
 
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
