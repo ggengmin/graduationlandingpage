@@ -50,7 +50,7 @@ export default function Home() {
               1
             </div>
             <div className="pt-1">
-              <p className="font-semibold">사전 결제</p>
+              <p className="font-semibold">사전 결제 확인 후 촬영 시작</p>
               <p className="text-sm text-gray-600 mt-1">(맨 아래 결제 안내 참고)</p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="mt-8 p-5 bg-gray-50 rounded-lg border-l-4 border-black max-w-md mx-auto">
           <p className="font-bold mb-2">💡 확인해 주세요!</p>
           <p className="text-sm leading-relaxed">
-            촬영 전, 스태프에게 <span className="font-bold">[결제 완료 화면]</span>을 꼭 보여주세요.
+            촬영 순서가 되면, 스태프에게 <span className="font-bold">[결제 완료 화면]</span>을 보여주세요.
           </p>
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function Home() {
           <div className="p-5 border-2 border-black rounded-lg">
             <h3 className="font-bold text-lg mb-2">실시간 메세징 웹캠 포토존</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              QR을 찍고 메시지를 보내면 5초 동안, 실시간으로 캠에 떠오릅니다.
+              QR을 찍고 메시지를 보내면 5초 동안 실시간으로 캠에 떠오릅니다. 우리만의 메세지로 추억을 남겨보세요! 
             </p>
           </div>
         </div>
@@ -191,7 +191,8 @@ export default function Home() {
       <section className="px-6 py-12 bg-white">
         <h2 className="text-2xl font-bold mb-3 text-center">결제 안내</h2>
         <p className="text-center text-gray-600 mb-8 text-sm">
-          원하시는 옵션을 선택해주세요
+          빠른 진행을 위해 사전결제로 진행됩니다.<br />
+	  촬영 순서가 되면, 결제 완료 창을 보여주세요!
         </p>
 
         {/* 결제 옵션 카드 */}
@@ -207,7 +208,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">2장</p>
-                <p className="text-sm text-gray-600 mt-1">포토 2컷</p>
+                <p className="text-sm text-gray-600 mt-1">2장이 출력됩니다</p>
               </div>
               <div className="text-right">
                 <p className="text-xl font-bold text-gray-800">3,000원</p>
@@ -224,7 +225,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">4장</p>
-                <p className="text-sm text-gray-600 mt-1">포토 4컷</p>
+                <p className="text-sm text-gray-600 mt-1">4장이 출력됩니다</p>
               </div>
               <div className="text-right">
                 <p className="text-xl font-bold text-gray-800">5,000원</p>
@@ -241,7 +242,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">6장</p>
-                <p className="text-sm text-gray-600 mt-1">포토 6컷</p>
+                <p className="text-sm text-gray-600 mt-1">6장이 출력됩니다</p>
               </div>
               <div className="text-right">
                 <p className="text-xl font-bold text-gray-800">7,000원</p>
@@ -277,15 +278,20 @@ export default function Home() {
           오래 꺼내보고 싶은 추억이 되길 바라요.
         </p>
 
+        <p className="text-base leading-relaxed mb-8">
+          스토리 업로드 시<br />
+          주인장 언급추가 해주는 당신은 센스쟁이!
+        </p>
+
         <div className="mt-8">
-          <p className="text-sm mb-3 opacity-80">📷 누비포토 인스타그램</p>
+          <p className="text-sm mb-3 opacity-80">누비포토 주인장 인스타그램</p>
           <a 
-            href="https://www.instagram.com/nuvy.photo"
+            href="https://www.instagram.com/ggengmin.e"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            @nuvy.photo
+            @ggengmin.e
           </a>
         </div>
       </section>
