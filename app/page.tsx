@@ -4,7 +4,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-6 py-16 text-center bg-black text-white">
         <h1 className="text-3xl font-bold mb-6 leading-tight">
-          2025 Dongseo Univ.<br />Graduation
+          제 31회 Dongseo Univ.<br />Graduation
         </h1>
         <p className="text-base leading-relaxed opacity-90">
           가장 빛나는 오늘의 당신을 위해<br />
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="mt-8 p-5 bg-gray-50 rounded-lg border-l-4 border-black max-w-md mx-auto">
           <p className="font-bold mb-2">💡 확인해 주세요!</p>
           <p className="text-sm leading-relaxed">
-            촬영 순서가 되면, 스태프에게 <span className="font-bold">[결제 완료 화면]</span>을 보여주세요.
+            촬영 순서가 되면, <br />스태프에게 <span className="font-bold">[결제 완료 화면]</span>을 꼭 보여주세요.
           </p>
         </div>
       </section>
