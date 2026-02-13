@@ -168,21 +168,6 @@ export default function Home() {
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
-      {/* 대기동선 안내 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">대기동선 안내</h2>
-        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
-          원활한 진행을 위해 안내된 동선을<br />따라 줄을 서주시면 감사하겠습니다.
-        </p>
-        
-        <div className="max-w-md mx-auto">
-          <img 
-            src="/waitingline.jpg" 
-            alt="대기동선 안내" 
-            className="w-full rounded-lg shadow-lg"
-          />
-        </div>
-      </section>
 
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
