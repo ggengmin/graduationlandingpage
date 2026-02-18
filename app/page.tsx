@@ -270,20 +270,15 @@ export default function Home() {
           오래 꺼내보고 싶은 추억이 되길 바라요.
         </p>
 
-        <p className="text-base leading-relaxed mb-8">
-          스토리 업로드 시<br />
-          주인장 언급추가 해주는 당신은 센스쟁이!
-        </p>
-
         <div className="mt-8">
-          <p className="text-sm mb-3 opacity-80">누비포토 주인장 인스타그램</p>
+          <p className="text-sm mb-3 opacity-80">누비포토</p>
           <a 
-            href="https://www.instagram.com/ggengmin.e"
+            href="https://www.instagram.com/nuvy.photo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
-            @ggengmin.e
+            @nuvy.photo
           </a>
         </div>
       </section>
