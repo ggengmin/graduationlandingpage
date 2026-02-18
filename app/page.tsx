@@ -4,7 +4,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-6 py-16 text-center bg-black text-white">
         <h1 className="text-3xl font-bold mb-6 leading-tight">
-          제 31회 Dongseo Univ.<br />Graduation
+          Dongeui Univ.<br />Graduation
         </h1>
         <p className="text-base leading-relaxed opacity-90">
           가장 빛나는 오늘의 당신을 위해<br />
@@ -21,16 +21,12 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6 text-center">운영 안내</h2>
         <div className="space-y-3 max-w-md mx-auto">
           <div className="flex items-start">
-            <span className="font-semibold min-w-[60px]">일자</span>
-            <span className="text-gray-700">2026. 2. 13. (금)</span>
-          </div>
-          <div className="flex items-start">
             <span className="font-semibold min-w-[60px]">시간</span>
             <span className="text-gray-700">10:00 – 15:00</span>
           </div>
           <div className="flex items-start">
             <span className="font-semibold min-w-[60px]">장소</span>
-            <span className="text-gray-700">뉴밀레니엄관</span>
+            <span className="text-gray-700">효민갤러리</span>
           </div>
         </div>
       </section>
@@ -97,44 +93,58 @@ export default function Home() {
       <div className="h-2 bg-black mx-6"></div>
 
       {/* 프레임 선택 - 2x2 그리드 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
-        <p className="text-center text-gray-600 mb-8 text-sm">
-          촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
-        </p>
-        
-        <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-            <img 
-              src="/a.png" 
-              alt="프레임 1" 
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-            <img 
-              src="/a2.png" 
-              alt="프레임 2" 
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-            <img 
-              src="/a3.png" 
-              alt="프레임 3" 
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
-            <img 
-              src="/a4.png" 
-              alt="프레임 4" 
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </div>
-      </section>
+{/* 프레임 선택 - 첫 줄 3개, 둘째 줄 2개 */}
+<section className="px-6 py-12 bg-white">
+  <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
+  <p className="text-center text-gray-600 mb-8 text-sm">
+    촬영 전, 아래 5가지 프레임 중 하나를 미리 골라주세요
+  </p>
+  
+  <div className="max-w-md mx-auto space-y-4">
+    {/* 첫 줄: 3개 */}
+    <div className="grid grid-cols-3 gap-3">
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+        <img 
+          src="/a.png" 
+          alt="프레임 1" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+        <img 
+          src="/a2.png" 
+          alt="프레임 2" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+        <img 
+          src="/a3.png" 
+          alt="프레임 3" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+    </div>
 
+    {/* 둘째 줄: 2개 (중앙 정렬) */}
+    <div className="grid grid-cols-3 gap-3">
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center col-start-1">
+        <img 
+          src="/a4.png" 
+          alt="프레임 4" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+        <img 
+          src="/a5.png" 
+          alt="프레임 5" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
@@ -255,7 +265,7 @@ export default function Home() {
       {/* Footer */}
       <section className="px-6 py-16 bg-black text-white text-center">
         <p className="text-base leading-relaxed mb-6">
-          동서대학교에서의 모든 시간이<br />
+          동의대학교에서의 모든 시간이<br />
           당신의 앞날에 밑거름이 되길 응원합니다.
         </p>
         <p className="text-base leading-relaxed mb-8">
