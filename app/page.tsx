@@ -22,7 +22,7 @@ export default function Home() {
         <div className="space-y-3 max-w-md mx-auto">
           <div className="flex items-start">
             <span className="font-semibold min-w-[60px]">시간</span>
-            <span className="text-gray-700">10:00 – 15:00</span>
+            <span className="text-gray-700">10:00 ~ </span>
           </div>
           <div className="flex items-start">
             <span className="font-semibold min-w-[60px]">장소</span>
@@ -93,7 +93,7 @@ export default function Home() {
       <div className="h-2 bg-black mx-6"></div>
 
       {/* 프레임 선택 - 2x2 그리드 */}
-{/* 프레임 선택 - 첫 줄 3개, 둘째 줄 2개 */}
+{/* 프레임 선택 - 첫 줄 3개, 둘째 줄 2개 (중앙) */}
 <section className="px-6 py-12 bg-white">
   <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
   <p className="text-center text-gray-600 mb-8 text-sm">
@@ -127,15 +127,15 @@ export default function Home() {
     </div>
 
     {/* 둘째 줄: 2개 (중앙 정렬) */}
-    <div className="grid grid-cols-3 gap-3">
-      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center col-start-1">
+    <div className="flex justify-center gap-3">
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center" style={{width: 'calc((100% - 0.75rem * 2) / 3)'}}>
         <img 
           src="/a4.png" 
           alt="프레임 4" 
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center">
+      <div className="bg-gray-100 rounded-lg overflow-hidden aspect-[2/3] flex items-center justify-center" style={{width: 'calc((100% - 0.75rem * 2) / 3)'}}>
         <img 
           src="/a5.png" 
           alt="프레임 5" 
@@ -145,6 +145,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
@@ -174,10 +175,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
-
 
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
