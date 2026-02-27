@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '동의대학교 2025학년도 전기학위수여식',
-  description: '가장 빛나는 오늘의 당신을 위해 특별한 포토부스를 준비했습니다.',
+  title: '2026 환경사랑 부산 k-런 포토부스',
+  description: '환경을 사랑하는 러너의 가장 뜨거운 인증샷',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 }
 

@@ -4,40 +4,23 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-6 py-16 text-center bg-black text-white">
         <h1 className="text-3xl font-bold mb-6 leading-tight">
-          Dongeui Univ.<br />Graduation
+          환경을 사랑하는 러너의 <br />가장 뜨거운 인증샷 
         </h1>
         <p className="text-base leading-relaxed opacity-90">
-          가장 빛나는 오늘의 당신을 위해<br />
-          특별한 포토부스를 준비했습니다.
+          탄소중립을 향한 5,000여 명의 뜨거운 발걸음.<br />
+          오늘 우리가 남긴 한 장의 사진이<br />
+	  푸른 지구를 만드는 원동력이 됩니다.<br />
         </p>
         <p className="text-base leading-relaxed opacity-90 mt-4">
-          소중한 동기, 가족들과 함께<br />
-          마지막 교정의 추억을 남겨보세요.
+          건강한 레이스의 마침표,<br />
+          기부 포토부스에서 완성하세요.
         </p>
       </section>
-
-      {/* 운영 안내 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-6 text-center">운영 안내</h2>
-        <div className="space-y-3 max-w-md mx-auto">
-          <div className="flex items-start">
-            <span className="font-semibold min-w-[60px]">시간</span>
-            <span className="text-gray-700">10:00 ~ </span>
-          </div>
-          <div className="flex items-start">
-            <span className="font-semibold min-w-[60px]">장소</span>
-            <span className="text-gray-700">효민갤러리</span>
-          </div>
-        </div>
-      </section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
 
       {/* 이용 방법 */}
       <section className="px-6 py-12 bg-white">
         <h2 className="text-xl font-bold mb-4 text-center">
-          복잡한 졸업식장,<br />미리 확인하고 빠르게 촬영하세요!
+          이용 순서,<br />미리 확인하고 빠르게 촬영하세요!
         </h2>
         
         <div className="space-y-6 mt-8 max-w-md mx-auto">
@@ -95,7 +78,7 @@ export default function Home() {
       {/* 프레임 선택 - 2x2 그리드 */}
 {/* 프레임 선택 - 첫 줄 3개, 둘째 줄 2개 (중앙) */}
 <section className="px-6 py-12 bg-white">
-  <h2 className="text-2xl font-bold mb-3 text-center">프레임 선택</h2>
+  <h2 className="text-2xl font-bold mb-3 text-center">프레임 미리보기</h2>
   <p className="text-center text-gray-600 mb-8 text-sm">
     촬영 전, 아래 5가지 프레임 중 하나를 미리 골라주세요
   </p>
@@ -149,36 +132,6 @@ export default function Home() {
       {/* 구분선 */}
       <div className="h-2 bg-black mx-6"></div>
 
-      {/* 추가 즐길거리 */}
-      <section className="px-6 py-12 bg-white">
-        <h2 className="text-2xl font-bold mb-3 text-center">
-          사진 말고도,<br />즐길 거리가 있어요
-        </h2>
-        <p className="text-center text-gray-600 mb-8 text-sm leading-relaxed">
-          기다리는 시간까지도 기억이 되도록 준비했어요.<br />
-          포토부스 외에도 곳곳에 숨겨진 재미를 찾아보세요!
-        </p>
-
-        <div className="space-y-6 max-w-md mx-auto">
-          <div className="p-5 border-2 border-black rounded-lg">
-            <h3 className="font-bold text-lg mb-2">우리들의 방명록</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              각 주제에 대해 자유롭게 작성해주세요. 우리의 이야기가 모여 하나의 추억이 됩니다.
-            </p>
-          </div>
-
-          <div className="p-5 border-2 border-black rounded-lg">
-            <h3 className="font-bold text-lg mb-2">실시간 메세징 웹캠 포토존</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              QR을 찍고 메시지를 보내면 5초 동안 실시간으로 캠에 떠오릅니다. 우리만의 메세지로 추억을 남겨보세요! 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 구분선 */}
-      <div className="h-2 bg-black mx-6"></div>
-
       {/* 결제 안내 - 대기동선 아래로 이동 */}
       <section className="px-6 py-12 bg-white">
         <h2 className="text-2xl font-bold mb-3 text-center">결제 안내</h2>
@@ -200,10 +153,10 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">2장</p>
-                <p className="text-sm text-gray-600 mt-1">2장이 출력됩니다</p>
+                <p className="text-sm text-gray-600 mt-1">같은 프레임 2장이 출력됩니다</p>
               </div>
               <div className="text-right">
-                <p className="text-xl font-bold text-gray-800">3,000원</p>
+                <p className="text-xl font-bold text-gray-800">4,000원</p>
               </div>
             </div>
           </a>
@@ -217,10 +170,10 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">4장</p>
-                <p className="text-sm text-gray-600 mt-1">4장이 출력됩니다</p>
+                <p className="text-sm text-gray-600 mt-1">같은 프레임 4장이 출력됩니다</p>
               </div>
               <div className="text-right">
-                <p className="text-xl font-bold text-gray-800">5,000원</p>
+                <p className="text-xl font-bold text-gray-800">6,000원</p>
               </div>
             </div>
           </a>
@@ -234,10 +187,10 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-bold text-gray-800">6장</p>
-                <p className="text-sm text-gray-600 mt-1">6장이 출력됩니다</p>
+                <p className="text-sm text-gray-600 mt-1">같은 프레임 6장이 출력됩니다</p>
               </div>
               <div className="text-right">
-                <p className="text-xl font-bold text-gray-800">7,000원</p>
+                <p className="text-xl font-bold text-gray-800">8,000원</p>
               </div>
             </div>
           </a>
@@ -252,7 +205,7 @@ export default function Home() {
             >
               <div className="flex items-center justify-center gap-2">
                 <span className="text-xl">💰</span>
-                <p className="font-bold text-gray-800">카카오페이 바로송금</p>
+                <p className="font-bold text-gray-800">보다 빠른 카카오페이 송금</p>
               </div>
             </a>
           </div>
@@ -262,12 +215,12 @@ export default function Home() {
       {/* Footer */}
       <section className="px-6 py-16 bg-black text-white text-center">
         <p className="text-base leading-relaxed mb-6">
-          동의대학교에서의 모든 시간이<br />
-          당신의 앞날에 밑거름이 되길 응원합니다.
+          오늘 함께하신 모든 분들의 앞날에<br />
+          건강과 행복이 가득하길 기원합니다.
         </p>
         <p className="text-base leading-relaxed mb-8">
-          오늘의 졸업이<br />
-          오래 꺼내보고 싶은 추억이 되길 바라요.
+          된다! 된다!<br />
+          잘 된다! 더 잘 된다!
         </p>
 
         <div className="mt-8">
