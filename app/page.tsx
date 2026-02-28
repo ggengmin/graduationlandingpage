@@ -80,7 +80,7 @@ export default function Home() {
 <section className="px-6 py-12 bg-white">
   <h2 className="text-2xl font-bold mb-3 text-center">프레임 미리보기</h2>
   <p className="text-center text-gray-600 mb-8 text-sm">
-    촬영 전, 아래 5가지 프레임 중 하나를 미리 골라주세요
+    촬영 전, 아래 4가지 프레임 중 하나를 미리 골라주세요
   </p>
   
          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
@@ -122,12 +122,27 @@ export default function Home() {
       <section className="px-6 py-12 bg-white">
         <h2 className="text-2xl font-bold mb-3 text-center">결제 안내</h2>
         <p className="text-center text-gray-600 mb-8 text-sm">
-          빠른 진행을 위해 사전결제로 진행됩니다.<br />
-	  촬영 순서가 되면, 결제 완료 창을 보여주세요!
+          대기줄 최소화를 위해 사전결제로 진행됩니다.<br />
+	  촬영 순서가 되면, 결제 완료 창을 보여주세요!<br/>
+          촬영 수익금의 일부는 환경 보호를 위해 기부됩니다.
         </p>
 
         {/* 결제 옵션 카드 */}
         <div className="space-y-3 max-w-md mx-auto">
+          <div className="pt-4"> 
+            <a 
+              href="https://qr.kakaopay.com/Ej7klol3J"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-4 bg-yellow-300 border-2 border-yellow-400 rounded-xl hover:bg-yellow-400 transition-all"
+            >
+              <div className="flex items-center justify-center gap-2">
+                <span className="text-xl">💰</span>
+                <p className="font-bold text-gray-800">보다 빠른 카카오페이 송금</p>
+              </div>
+            </a>
+            <p className="text-center font-semibold text-gray-800 mb-3">또는</p>
+          </div>
           <p className="text-center font-semibold text-gray-800 mb-4">💳 장수별 결제</p>
           
           <a 
@@ -181,20 +196,6 @@ export default function Home() {
             </div>
           </a>
 
-          <div className="pt-4">
-            <p className="text-center font-semibold text-gray-800 mb-3">또는</p>
-            <a 
-              href="https://qr.kakaopay.com/Ej7klol3J"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block p-4 bg-yellow-300 border-2 border-yellow-400 rounded-xl hover:bg-yellow-400 transition-all"
-            >
-              <div className="flex items-center justify-center gap-2">
-                <span className="text-xl">💰</span>
-                <p className="font-bold text-gray-800">보다 빠른 카카오페이 송금</p>
-              </div>
-            </a>
-          </div>
         </div>
       </section>
 
